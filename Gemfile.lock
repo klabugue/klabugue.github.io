@@ -275,6 +275,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages (~> 214)
   jekyll-feed (~> 0.12)
+  jekyll-remote-theme
   minima (~> 2.5)
   monophase
   tzinfo (~> 1.2)
