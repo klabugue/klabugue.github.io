@@ -24,7 +24,7 @@ email: me@katlab.io
 description: >- # this means to ignore newlines until "baseurl:"
   Documenting my technical journey, observations
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://katlab.io" # the base hostname & protocol for your site, e.g. http://katlab.io
+url: "https://katlab.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
