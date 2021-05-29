@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Mistake in Applying Gaussian Noise using MATLAB"
-date:   2021-05-28 16:13:23 -0600
+date:   2021-05-29 09:53:23 -0600
 tags: introcv
 ---
 
