@@ -2,7 +2,7 @@
 layout: post
 title:  "First Post...What is an Image? What is Noise?"
 date:   2021-05-28 16:13:23 -0600
-categories: introcv
+tags: introcv
 ---
 This is my first post, so I thought I'd jot down some notes about Computer Vision basics. I'll also add simple MATLAB code snippets here and there that I could foresee myself using fairly often in the future. To start off, here are some key takeaways, particularly about how to view images mathematically:
 
