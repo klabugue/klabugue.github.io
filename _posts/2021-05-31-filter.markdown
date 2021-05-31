@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "Basic Filtering"
+date:   2021-05-31 10:00:46 -0600
+tags: introcv
+usemathjax: true
+---
+
+Today I wanted to talk about basic Filtering techniques and how to remove noise from an image. One approach would be to replace each pixel with an average of all the values within its neighborhood, which we usually refer to as a <strong>moving average</strong>. With this technique, though, we make a few assumptions:
+1. The "true" values of the pixels are similar to the true value of pixels nearby
+1. The noise added to each pixel is done independenly
+
+<strong>Correlation Filter using Uniform Weights</strong>
+
+In correlation filtering, we have uniform weights and loop over all of the pixels in the neighborhood around an image pixel F[i,j]. Thus with an averaging window size of (2k+1)x(2k+1), we get the equation:
+
+<center>$$G[i,j]=\frac{1}{(2k+1)^2}\sum_{u=-k}^{k}\sum_{v=-k}^{k}F[i+u,j+v]$$</center>
+
+<strong>Correlation Filter using Nonuniform Weights</strong>
+
+To allow for <i>different weights</i> depending on the neighboring pixel's relative position, we use the following equation:
+
+<center>$$G[i,j]=\frac{1}{(2k+1)^2}\sum_{u=-k}^{k}\sum_{v=-k}^{k}H[u,v]F[i+u,j+v]$$</center>
+
+Where H[u,v] is the matrix of weights in the linear combo; it is also known as the filter "kernel" or "mask".
+
+Filtering using nonuniform weights provides the best approach in removing noise from an image. When using nonuniform weights, we often get a smoother graph that better reflects the original data. For example, in the image below, the blue line represents the original function, green uses a uniform moving average, and pink a nonuniform moving average. The nonuniform moving average is much smoother and better reflects the original function.
+
+![Moving Average Example](/assets/moving_avg.png) 
