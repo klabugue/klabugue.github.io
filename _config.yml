@@ -37,7 +37,8 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
-remote_theme: zivhub/monophase
+  - jekyll-include-cache
+remote_theme: mmistakes/minimal-mistakes@4.24.0
 
 # Exclude from processing.
 # The following items will not be processed, by default.
