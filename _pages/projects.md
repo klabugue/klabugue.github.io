@@ -1,10 +1,14 @@
 ---
-title: Projects
-layout: collection
+layout: archive
+title: "Portfolio"
 permalink: /projects/
-collection: portfolio
-entries_layout: grid
-classes: wide
+author_profile: false
 ---
 
-Sample document listing for the collection `_portfolio`.
+{% include base_path %}
+
+<div class="grid__wrapper">
+  {% for post in site.portfolio %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+</div>
