@@ -1,13 +1,15 @@
 ---
-layout: post
 title:  "A Mistake in Applying Gaussian Noise using MATLAB"
 date:   2021-05-29 09:53:23 -0600
-tags: introcv
+categories:
+  - blog
+tags: 
+  - introcv
 ---
 
 In my previous post, I provided code that I hoped would demonstrate how to apply gaussian noise to an image in MATLAB. The logic is there but because the randn() function -- also known as the normally distributed random numbers function -- returns a value of type double, and is normally distributed with mean 0 we are not really applying gaussian noise to the image when we typecast these values to a uint8:
 
-![Something's not right here](/assets/noise_mistake.png) 
+![Something's not right here](/assets/images/noise_mistake.png) 
 
 Notice how a concentration of values is at 0...this isn't what we want! What we really want is a function to return a random uint8 value and have a normal distribution between 0-255 with mean 128; and we want to apply this to the original image. So how would we accomplish this?
 
@@ -31,8 +33,8 @@ imshow(noise);
 Using this method, we get the following:
 
 Before
-![Before](/assets/example_imnoise_original.png) 
+![Before](/assets/images/example_imnoise_original.png) 
 
 After
-![After](/assets/example_imnoise.png)
+![After](/assets/images/example_imnoise.png)
 

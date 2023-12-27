@@ -1,8 +1,10 @@
 ---
-layout: post
 title:  "First Post...What is an Image? What is Noise?"
 date:   2021-05-28 16:13:23 -0600
-tags: introcv
+categories:
+  - blog
+tags: 
+  - introcv
 ---
 This is my first post, so I thought I'd jot down some notes about Computer Vision basics. I'll also add simple MATLAB code snippets here and there that I could foresee myself using fairly often in the future. To start off, here are some key takeaways, particularly about how to view images mathematically:
 
@@ -52,10 +54,10 @@ imshow(output);
 And voilà! We can display both figures and get the following images generated from the MATLAB code.
 
 Before:
-![Before](/assets/example_before.png) 
+![Before](/assets/images/example_before.png) 
 
 After:
-![After](/assets/example_after.png)
+![After](/assets/images/example_after.png)
 
 Stay tuned for tomorrow's post where I'll be covering <strong>Filtering</strong> and talking more <strong>Noise</strong>!
 

@@ -1,8 +1,10 @@
 ---
-layout: post
 title:  "Filtering Basics and Moving Averages"
 date:   2021-05-31 10:00:46 -0600
-tags: introcv
+categories:
+  - blog
+tags: 
+  - introcv
 usemathjax: true
 ---
 
@@ -26,4 +28,4 @@ Where H[u,v] is the matrix of weights in the linear combo; it is also known as t
 
 Filtering using nonuniform weights provides the best approach in removing noise from an image. When using nonuniform weights, we often get a smoother graph that better reflects the original data. For example, in the image below, the blue line represents the original function, green uses a uniform moving average, and pink a nonuniform moving average. The nonuniform moving average is much smoother and better reflects the original function.
 
-![Moving Average Example](/assets/moving_avg.png) 
+![Moving Average Example](/assets/images/moving_avg.png) 

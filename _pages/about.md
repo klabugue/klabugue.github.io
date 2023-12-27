@@ -1,7 +1,6 @@
 ---
-layout: page
-title: About
 permalink: /about/
+title: "About"
 ---
 
 I created this website because I wanted to start documenting projects that I work on in my free time. I genuinely
